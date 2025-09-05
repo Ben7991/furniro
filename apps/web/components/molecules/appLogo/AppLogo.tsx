@@ -12,8 +12,14 @@ export function AppLogo({
 }: AppLogoProps): React.JSX.Element {
   return (
     <Link href={path} className={`${className} flex items-center gap-1`}>
-      <Image src="/logo.svg" alt="Furniro Logo" width={50} height={32} />
-      <strong className="text-2xl lg:text-3xl">Furniro</strong>
+      <Image
+        src="/logo.svg"
+        alt="Furniro Logo"
+        width={50}
+        height={32}
+        className="w-10 lg:w-12"
+      />
+      <strong className="text-2xl lg:text-3xl text-black">Furniro</strong>
     </Link>
   );
 }
