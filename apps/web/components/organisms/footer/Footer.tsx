@@ -6,7 +6,7 @@ import { Headline } from '@/components/atoms/headline/Headline';
 export function Footer(): React.JSX.Element {
   return (
     <footer className="py-10">
-      <Container className="border-b border-b-gray-400 pb-10">
+      <Container className="border-b border-b-gray-300 pb-10">
         <Row className="flex-col md:flex-row justify-between gap-8">
           <Col className="basis-4/12">
             <Headline tag="h4" className="mb-3 md:mb-5 lg:mb-6">
