@@ -1,0 +1,28 @@
+.navbar__collapsible {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 75%;
+  background-color: var(--color-white);
+  height: 100vh;
+  z-index: 10;
+  border-right: 1px solid var(--color-gray-300);
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar__nav {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: var(--breakpoint-lg)) {
+  .navbar__collapsible {
+    position: static;
+    flex-direction: row;
+  }
+
+  .navbar__nav {
+    flex-direction: row;
+  }
+}
