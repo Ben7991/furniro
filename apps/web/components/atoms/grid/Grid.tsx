@@ -5,7 +5,7 @@ export function Container({
   className = '',
 }: GridProps): React.JSX.Element {
   return (
-    <div className={`${className} w-full px-4 xl:w-[1105px] xl:mx-auto`}>
+    <div className={`${className} w-full px-4 xl:w-[1200px] xl:mx-auto`}>
       {children}
     </div>
   );
