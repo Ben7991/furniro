@@ -1,5 +1,17 @@
 @import 'tailwindcss';
 
+:root {
+  --cream-300: #fff3e3;
+  --cream-700: #b88e2f;
+}
+
 body {
   font-family: var(--font-archivo);
+  color: var(--color-gray-500);
+}
+
+.hero {
+  background-image: url('../public/furniro-1.jpg');
+  background-size: cover;
+  background-position: center;
 }

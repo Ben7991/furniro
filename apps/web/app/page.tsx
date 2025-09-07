@@ -1,7 +1,13 @@
+import { HomeLayout } from '@/components/layouts/home/HomeLayout';
+import { Categories, Hero, Products, ShareSetup } from './page.partials';
+
 export default function Home() {
   return (
-    <>
-      <h1>Getting started</h1>
-    </>
+    <HomeLayout>
+      <Hero />
+      <Categories />
+      <Products />
+      <ShareSetup />
+    </HomeLayout>
   );
 }
