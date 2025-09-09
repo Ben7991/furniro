@@ -88,10 +88,9 @@ export function Footer(): React.JSX.Element {
           </Col>
         </Row>
       </Container>
-      <Container className="py-5">
-        <p className="text-center">
-          &copy; Furniro. 2025 | All rights reserved
-        </p>
+      <Container className="py-5 text-center">
+        {/* <Copyright /> */}
+        testing
       </Container>
     </footer>
   );
