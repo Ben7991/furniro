@@ -22,7 +22,7 @@ export function Button(props: ButtonProps | AnchorProps): React.JSX.Element {
 
   if (props.variant === 'primary') {
     variantStyle =
-      'border border-[var(--cream-700)] bg-[var(--cream-700)] text-white';
+      'border border-[var(--cream-700)] bg-[var(--cream-700)] hover:bg-[var(--cream-800)] text-white';
   } else {
     variantStyle = 'border border-[var(--cream-700)] text-[var(--cream-700)]';
   }
@@ -30,7 +30,7 @@ export function Button(props: ButtonProps | AnchorProps): React.JSX.Element {
   if (props.el === 'link') {
     return (
       <Link
-        className={`inline-block py-2 px-4 ${variantStyle} ${props.className}`}
+        className={`inline-block py-2 px-5 rounded-sm ${variantStyle} ${props.className}`}
         {...props}
       >
         {props.children}
@@ -41,7 +41,7 @@ export function Button(props: ButtonProps | AnchorProps): React.JSX.Element {
   return (
     <button
       {...props}
-      className={`inline-block py-2 px-4 cursor-pointer ${variantStyle} ${props.className}`}
+      className={`inline-block py-2 px-5 cursor-pointer rounded-sm ${variantStyle} ${props.className}`}
     >
       {props.children}
     </button>
