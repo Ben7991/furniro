@@ -1,0 +1,3 @@
+.form-control:has(input:focus) {
+  border-color: var(--cream-700);
+}
